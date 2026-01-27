@@ -1,0 +1,275 @@
+.container {
+  width: min(1100px, 92%);
+  margin: 0 auto;
+  padding: 46px 0 70px;
+}
+
+.section {
+  margin-bottom: 42px;
+}
+
+.section h2 {
+  font-size: 1.7rem;
+  margin-bottom: 10px;
+}
+
+.lead {
+  color: rgba(11,19,43,0.75);
+  line-height: 1.65;
+
+}
+.productsWrap__inner .lead {
+  max-width: none;
+  width: 100%;
+}
+.productsWrap__inner {
+  width: min(1100px, 92%);
+  margin: 0 auto;
+}
+
+
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 14px;
+}
+
+.card {
+  border: 1px solid rgba(0,0,0,0.08);
+  border-radius: 14px;
+  padding: 18px 16px;
+  background: #fff;
+  box-shadow: 0 10px 24px rgba(0,0,0,0.04);
+}
+
+.card h3 {
+  margin-bottom: 10px;
+}
+
+.card ul {
+  padding-left: 18px;
+  color: rgba(11,19,43,0.78);
+  line-height: 1.6;
+}
+
+.cta {
+  margin-top: 50px;
+  padding: 22px 18px;
+  border-radius: 16px;
+  background: linear-gradient(90deg, rgba(31,162,255,0.12), rgba(15,76,129,0.10));
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 14px;
+  flex-wrap: wrap;
+}
+
+@media (max-width: 900px) {
+  .grid { grid-template-columns: 1fr; }
+}
+.about {
+  background: #f7f9fc;
+  padding: 56px 0;
+}
+
+.about__inner {
+  width: min(1100px, 92%);
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1.5fr 0.9fr;
+  gap: 18px;
+}
+
+.about__inner h2 {
+  font-size: 1.9rem;
+  margin-bottom: 10px;
+}
+
+.about__inner p {
+  color: rgba(11,19,43,0.78);
+  line-height: 1.65;
+}
+
+.about__mv {
+  margin-top: 14px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+}
+
+.about__box {
+  background: #fff;
+  border: 1px solid rgba(0,0,0,0.07);
+  border-radius: 16px;
+  padding: 14px;
+}
+
+.about__aside {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.about__aside .btnPrimary {
+  margin-top: 10px;
+  align-self: flex-start;
+}
+
+
+.contact {
+   padding: 10px 0 60px;
+}
+
+.contact__inner {
+  width: min(1100px, 92%);
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 32px;
+  align-items: start;
+}
+
+.contact__card {
+  border: 1px solid rgba(0,0,0,0.08);
+  border-radius: 16px;
+  padding: 16px;
+  background: #fff;
+  box-shadow: 0 10px 24px rgba(0,0,0,0.04);
+}
+
+@media (max-width: 900px) {
+  .about__inner,
+  .contact__inner {
+    grid-template-columns: 1fr;
+  }
+  .about__mv {
+    grid-template-columns: 1fr;
+  }
+}
+
+
+.contact__inner > div:first-child {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  align-items: flex-start;
+}
+
+@media (max-width: 900px) {
+  .contact__inner > div:first-child {
+    align-items: center;
+    text-align: center;
+  }
+}
+@media (max-width: 420px) {
+  .btnPrimary {
+    width: 100%;
+  }
+}
+
+.mapCard {
+  width: 100%;
+  border-radius: 16px;
+  overflow: hidden;
+  border: 1px solid rgba(0,0,0,0.08);
+  background: #fff;
+  box-shadow: 0 10px 24px rgba(0,0,0,0.04);
+}
+
+.mapCard iframe {
+  width: 100%;
+  height: 280px;
+  border: 0;
+  display: block;
+}
+
+/* Tablet */
+@media (max-width: 900px) {
+  .mapCard iframe {
+    height: 320px;
+  }
+}
+
+/* Mobile */
+@media (max-width: 480px) {
+  .mapCard iframe {
+    height: 260px;
+  }
+}
+
+.productsWrap {
+ padding: 56px 0 20px;
+}
+
+.productsWrap__inner {
+  width: min(1100px, 92%);
+  margin: 0 auto;
+}
+
+.productsIntro {
+  width: 100%;
+  max-width: none;   /
+  margin-top: 10px;
+  color: rgba(11,19,43,0.78);
+  line-height: 1.8;
+  font-size: 1.02rem;
+}
+
+
+.productsIntro p + p {
+  margin-top: 12px;
+}
+
+.productsIntro p {
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+
+/* Columna izquierda */
+.contact__left {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.contact__left h2 {
+  margin-bottom: 4px;
+}
+
+/* Card de datos */
+.contact__data {
+  margin-top: 16px;
+  padding: 16px;
+  border: 1px solid rgba(0,0,0,0.08);
+  border-radius: 14px;
+  background: #fff;
+}
+
+.contact__data h3 {
+  margin-bottom: 8px;
+}
+
+/* Mapa */
+.contact__map iframe {
+  width: 100%;
+  height: 320px;
+  border: 0;
+  border-radius: 16px;
+  box-shadow: 0 10px 24px rgba(0,0,0,0.08);
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .contact__inner {
+    grid-template-columns: 1fr;
+  }
+
+  .contact__map iframe {
+    height: 300px;
+  }
+}
+.showcaseWrap{
+  width: min(1100px, 92%);
+  margin: 0 auto;
+}
