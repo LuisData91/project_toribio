@@ -24,7 +24,7 @@ export const homeCopy = {
   heroSubtitle:
     "Productos y soporte técnico para aplicaciones industriales y móviles. Calidad, confianza y respuesta rápida.",
   ctaText: "Pedir cotización",
-  whatsapp: "https://wa.me/51942145733?text=Hola,%20quisiera%20una%20cotización",
+  whatsapp: "https://wa.me/51962740682?text=Hola,%20quisiera%20una%20cotización",
 };
 
 export const featuredProducts = [

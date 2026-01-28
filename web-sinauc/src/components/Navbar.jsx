@@ -38,9 +38,9 @@ export default function Navbar() {
         </nav>
 
         {/* CTA desktop (se oculta en móvil) */}
-        <a className="navbar__cta navbar__cta--desktop" href="https://wa.me/51962740682?text=Hola,%20quisiera%20una%20cotización" target="_blank" rel="noreferrer">
+        {/* <a className="navbar__cta navbar__cta--desktop" href="https://wa.me/51962740682?text=Hola,%20quisiera%20una%20cotización" target="_blank" rel="noreferrer">
           Pedir cotización
-        </a>
+        </a> */}
       </div>
     </header>
   );

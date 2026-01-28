@@ -1,7 +1,8 @@
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Autoplay, EffectFade } from "swiper/modules";
+import { Autoplay, EffectFade, Navigation } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/effect-fade";
+import "swiper/css/navigation";
 import "../styles/slider.css";
 
 import { heroSlides, homeCopy } from "../data/home";
@@ -9,10 +10,14 @@ import { heroSlides, homeCopy } from "../data/home";
 export default function SliderHero() {
   return (
     <section className="hero">
+      {/* Overlay oscuro (graduable por CSS) */}
+      <div className="heroDark" />
+
       <Swiper
-        modules={[Autoplay, EffectFade]}
+        modules={[Autoplay, EffectFade, Navigation]}
         effect="fade"
         loop
+        navigation={true} // ✅ flechas izquierda/derecha
         autoplay={{ delay: 3500, disableOnInteraction: false }}
         className="heroSwiper"
       >
@@ -32,10 +37,17 @@ export default function SliderHero() {
           <p className="heroTag">{homeCopy.tagline}</p>
           <h1>{homeCopy.heroTitle}</h1>
           <p className="heroSub">{homeCopy.heroSubtitle}</p>
+
           <div className="heroActions">
-            <a className="btnPrimary" href={homeCopy.whatsapp} target="_blank" rel="noreferrer">
+            <a
+              className="btnPrimary"
+              href={homeCopy.whatsapp}
+              target="_blank"
+              rel="noreferrer"
+            >
               {homeCopy.ctaText}
             </a>
+
             <a className="btnGhost" href="#productos">
               Ver productos
             </a>
