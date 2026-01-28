@@ -34,6 +34,7 @@
 .heroOverlay {
   position: absolute;
   inset: 0;
+   pointer-events: none;
   z-index: 2;
   background: linear-gradient(
     90deg,
@@ -49,6 +50,7 @@
   width: min(1100px, 92%);
   margin: 0 auto;
   color: #fff;
+  pointer-events: auto;
 }
 
 .heroTag {
