@@ -1,12 +1,21 @@
+import Imagen1 from "../assets/images/Imagen1.jpg";
+import Imagen2 from "../assets/images/Imagen2.jpg";
+import Imagen3 from "../assets/images/Imagen3.jpg";
+import Imagen4 from "../assets/images/Imagen4.jpg";
+import Imagen5 from "../assets/images/Imagen5.jpg";
+import Imagen6 from "../assets/images/Imagen6.jpg";
+import Imagen7 from "../assets/images/Imagen7.jpg";
+
 export const heroSlides = [
-  { src: "/src/assets/images/Imagen1.jpg", alt: "Slide 1" },
-  { src: "/src/assets/images/Imagen2.jpg", alt: "Slide 2" },
-  { src: "/src/assets/images/Imagen3.jpg", alt: "Slide 3" },
-  { src: "/src/assets/images/Imagen4.jpg", alt: "Slide 4" },
-  { src: "/src/assets/images/Imagen5.jpg", alt: "Slide 5" },
-  { src: "/src/assets/images/Imagen6.jpg", alt: "Slide 6" },
-  { src: "/src/assets/images/Imagen7.jpg", alt: "Slide 7" },
+  { src: Imagen1, alt: "Slide 1" },
+  { src: Imagen2, alt: "Slide 2" },
+  { src: Imagen3, alt: "Slide 3" },
+  { src: Imagen4, alt: "Slide 4" },
+  { src: Imagen5, alt: "Slide 5" },
+  { src: Imagen6, alt: "Slide 6" },
+  { src: Imagen7, alt: "Slide 7" },
 ];
+
 
 export const homeCopy = {
   brand: "HIA",
