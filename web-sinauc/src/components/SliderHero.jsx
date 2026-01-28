@@ -17,7 +17,7 @@ export default function SliderHero() {
         modules={[Autoplay, EffectFade, Navigation]}
         effect="fade"
         loop
-        navigation={true} // ✅ flechas izquierda/derecha
+        navigation={true} //  flechas izquierda/derecha
         autoplay={{ delay: 3500, disableOnInteraction: false }}
         className="heroSwiper"
       >
