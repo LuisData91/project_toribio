@@ -5,6 +5,9 @@ import Imagen4 from "../assets/images/Imagen4.jpg";
 import Imagen5 from "../assets/images/Imagen5.jpg";
 import Imagen6 from "../assets/images/Imagen6.jpg";
 import Imagen7 from "../assets/images/Imagen7.jpg";
+import Imagen8 from "../assets/images/banner1.png";
+import Imagen9 from "../assets/images/banner2.png";
+import Imagen10 from "../assets/images/banner3.png";
 
 export const heroSlides = [
   { src: Imagen1, alt: "Slide 1" },
@@ -14,6 +17,9 @@ export const heroSlides = [
   { src: Imagen5, alt: "Slide 5" },
   { src: Imagen6, alt: "Slide 6" },
   { src: Imagen7, alt: "Slide 7" },
+  { src: Imagen8, alt: "Slide 8" },
+  { src: Imagen9, alt: "Slide 9" },
+  { src: Imagen10, alt: "Slide 10" },
 ];
 
 

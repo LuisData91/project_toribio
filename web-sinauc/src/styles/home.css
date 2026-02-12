@@ -374,3 +374,249 @@
     max-width: 100%;
   }
 }
+
+/* ================= SERVICIOS Y PROYECTOS (BLOQUE COMERCIAL) ================= */
+
+.srvSales {
+  padding: 54px 0;
+  background: #fff;
+}
+
+.srvSales__inner {
+  width: min(1100px, 92%);
+  margin: 0 auto;
+}
+
+.srvSales__head h2 {
+  margin-bottom: 8px;
+}
+
+.srvSales__sub {
+  color: rgba(11,19,43,0.72);
+  line-height: 1.7;
+  max-width: 85ch;
+}
+
+.srvSales__grid {
+  margin-top: 22px;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 18px;
+  align-items: start;
+}
+
+.srvCard {
+  border: 1px solid rgba(0,0,0,0.08);
+  border-radius: 16px;
+  background: #fff;
+  box-shadow: 0 10px 24px rgba(0,0,0,0.04);
+  padding: 16px;
+}
+
+.srvCard__top {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.srvBadge {
+  width: 38px;
+  height: 38px;
+  border-radius: 12px;
+  display: grid;
+  place-items: center;
+  background: rgba(31,162,255,0.12);
+  font-size: 18px;
+}
+
+.srvCard h3 {
+  font-size: 1.1rem;
+  line-height: 1.25;
+}
+
+.srvCard__lead {
+  margin-top: 10px;
+  margin-bottom: 8px;
+  font-weight: 700;
+  color: rgba(11,19,43,0.85);
+}
+
+.srvList {
+  padding-left: 18px;
+  line-height: 1.7;
+  color: rgba(11,19,43,0.78);
+  margin-bottom: 8px;
+}
+
+.srvCard__cta {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 12px;
+  text-decoration: none;
+  font-weight: 700;
+  border-radius: 12px;
+  padding: 10px 14px;
+  background: rgba(15,76,129,0.10);
+  color: var(--primary);
+}
+
+.srvCard__cta:hover {
+  filter: brightness(0.98);
+}
+
+/* “FORMAS” (A-F) */
+.srvForms {
+  margin-top: 26px;
+  border: 1px solid rgba(0,0,0,0.08);
+  border-radius: 16px;
+  background: #fff;
+  box-shadow: 0 10px 24px rgba(0,0,0,0.04);
+  padding: 18px;
+}
+
+.srvForms__title {
+  margin-bottom: 6px;
+}
+
+.srvForms__subtitle {
+  color: rgba(11,19,43,0.72);
+  line-height: 1.7;
+  margin-bottom: 14px;
+}
+
+.srvForms__grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 10px;
+}
+
+.srvChip {
+  display: flex;
+  gap: 10px;
+  align-items: flex-start;
+  border: 1px solid rgba(0,0,0,0.06);
+  border-radius: 14px;
+  padding: 12px;
+  background: #fff;
+}
+
+.srvChip__dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 999px;
+  background: var(--secondary);
+  margin-top: 5px;
+  flex: 0 0 auto;
+}
+
+.srvChip span:last-child {
+  color: rgba(11,19,43,0.80);
+  line-height: 1.55;
+}
+
+.srvForms__actions {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+  margin-top: 14px;
+}
+
+/* Responsive */
+@media (max-width: 980px) {
+  .srvSales__grid {
+    grid-template-columns: 1fr;
+  }
+  .srvForms__grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* ================= COMPONENTES (OPCIÓN 1) ================= */
+
+.components {
+  padding: 54px 0;
+  background: #ffffff;
+}
+
+.components__inner {
+  width: min(1100px, 92%);
+  margin: 0 auto;
+}
+
+.components__head h2 {
+  margin-bottom: 8px;
+}
+
+.components__head p {
+  color: rgba(11,19,43,0.72);
+  line-height: 1.7;
+  max-width: 85ch;
+}
+
+.components__grid {
+  margin-top: 18px;
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 14px;
+}
+
+.compCard {
+  border: 1px solid rgba(0,0,0,0.08);
+  border-radius: 16px;
+  background: #fff;
+  box-shadow: 0 10px 24px rgba(0,0,0,0.04);
+  padding: 14px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.compCard__img {
+  border: 1px solid rgba(0,0,0,0.06);
+  background: #ffffff;   /* blanco */
+  border-radius: 14px;
+  padding: 12px;
+  height: 160px;
+  display: grid;
+  place-items: center;
+}
+
+.compCard__img img {
+  width: 100%;
+  height: 130px;
+  object-fit: contain;
+  display: block;
+}
+
+.compCard h3 {
+  font-size: 1.02rem;
+  line-height: 1.25;
+}
+
+.compCard p {
+  color: rgba(11,19,43,0.74);
+  line-height: 1.55;
+  font-size: 0.96rem;
+}
+
+.components__cta {
+  margin-top: 16px;
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+/* Responsive */
+@media (max-width: 980px) {
+  .components__grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 520px) {
+  .components__grid {
+    grid-template-columns: 1fr;
+  }
+}
